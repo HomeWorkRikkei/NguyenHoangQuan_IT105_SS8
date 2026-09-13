@@ -1,0 +1,114 @@
+<mxfile host="app.diagrams.net" modified="2026-09-10T00:00:00.000Z" agent="Claude" version="24.7.5">
+  <diagram id="classDiagramRikkeiCare" name="Class Diagram - RikkeiCare (Refactored)">
+    <mxGraphModel dx="1400" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Outer Pool bao toàn bộ diagram -->
+        <mxCell id="pool1" value="RikkeiCare - Class Diagram (Sau tái cấu trúc)" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="1320" height="760" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== LỚP CHA: NhanVienYTe ===================== -->
+        <mxCell id="nvyt1" value="NhanVienYTe" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;fontSize=14;" vertex="1" parent="pool1">
+          <mxGeometry x="520" y="60" width="280" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="nvyt-sep1" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="nvyt1">
+          <mxGeometry y="30" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nvyt-attr1" value="- maNhanVien: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="nvyt1">
+          <mxGeometry y="38" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nvyt-attr2" value="- hoTen: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="nvyt1">
+          <mxGeometry y="64" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nvyt-attr3" value="- soDienThoai: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="nvyt1">
+          <mxGeometry y="90" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nvyt-sep2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="nvyt1">
+          <mxGeometry y="116" width="280" height="8" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== LỚP CON: BacSi ===================== -->
+        <mxCell id="bacsi1" value="BacSi" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;fontSize=14;" vertex="1" parent="pool1">
+          <mxGeometry x="250" y="320" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bacsi-sep1" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="bacsi1">
+          <mxGeometry y="30" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="bacsi-attr1" value="- chuyenKhoa: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="bacsi1">
+          <mxGeometry y="38" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bacsi-sep2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="bacsi1">
+          <mxGeometry y="64" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="bacsi-method1" value="+ kham(benhNhan): void" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="bacsi1">
+          <mxGeometry y="72" width="260" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== LỚP CON: YTa ===================== -->
+        <mxCell id="yta1" value="YTa" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;fontSize=14;" vertex="1" parent="pool1">
+          <mxGeometry x="820" y="320" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="yta-sep1" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="yta1">
+          <mxGeometry y="30" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yta-attr1" value="- khuVucTruc: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="yta1">
+          <mxGeometry y="38" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yta-sep2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="yta1">
+          <mxGeometry y="64" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="yta-method1" value="+ tiemThuoc(benhNhan): void" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="yta1">
+          <mxGeometry y="72" width="260" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== LỚP KhoaKham ===================== -->
+        <mxCell id="khoa1" value="KhoaKham" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;fontSize=14;" vertex="1" parent="pool1">
+          <mxGeometry x="60" y="60" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="khoa-sep1" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="khoa1">
+          <mxGeometry y="30" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="khoa-attr1" value="- maKhoa: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="khoa1">
+          <mxGeometry y="38" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="khoa-attr2" value="- tenKhoa: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="khoa1">
+          <mxGeometry y="64" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="khoa-sep2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="khoa1">
+          <mxGeometry y="90" width="240" height="8" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== QUAN HỆ KẾ THỪA (Generalization) ===================== -->
+        <!-- BacSi -> NhanVienYTe : mũi tên tam giác rỗng -->
+        <mxCell id="inherit1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;rounded=0;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="pool1" source="bacsi1" target="nvyt1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- YTa -> NhanVienYTe : mũi tên tam giác rỗng -->
+        <mxCell id="inherit2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;endSize=18;startArrow=none;startFill=0;rounded=0;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="pool1" source="yta1" target="nvyt1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== QUAN HỆ AGGREGATION ===================== -->
+        <!-- KhoaKham o to NhanVienYTe : hình thoi rỗng phía KhoaKham -->
+        <mxCell id="aggr1" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=diamondThin;startFill=0;startSize=22;endArrow=none;rounded=0;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="pool1" source="khoa1" target="nvyt1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aggr1-label-1" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=1;" vertex="1" connectable="0" parent="aggr1">
+          <mxGeometry x="-0.8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aggr1-label-2" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=1;" vertex="1" connectable="0" parent="aggr1">
+          <mxGeometry x="0.8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net" modified="2026-09-10T00:00:00.000Z" agent="Claude" version="24.7.5">
+  <diagram id="classDiagramRikkeiShop" name="Class Diagram - RikkeiShop">
+    <mxGraphModel dx="1400" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Outer Pool bao toàn bộ diagram, đặt tên hệ thống -->
+        <mxCell id="pool1" value="RikkeiShop - Class Diagram" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="1320" height="760" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== LỚP CUSTOMER ===================== -->
+        <mxCell id="cust1" value="Customer" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;fontSize=14;" vertex="1" parent="pool1">
+          <mxGeometry x="150" y="120" width="260" height="190" as="geometry" />
+        </mxCell>
+
+        <!-- Đường phân cách giữa tên lớp và thuộc tính -->
+        <mxCell id="cust-sep1" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="cust1">
+          <mxGeometry y="30" width="260" height="8" as="geometry" />
+        </mxCell>
+
+        <!-- Thuộc tính (Attributes) - private nên dùng dấu - -->
+        <mxCell id="cust-attr1" value="- customerId: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="cust1">
+          <mxGeometry y="38" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cust-attr2" value="- fullName: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="cust1">
+          <mxGeometry y="64" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cust-attr3" value="- phoneNumber: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="cust1">
+          <mxGeometry y="90" width="260" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Đường phân cách giữa thuộc tính và phương thức -->
+        <mxCell id="cust-sep2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="cust1">
+          <mxGeometry y="116" width="260" height="8" as="geometry" />
+        </mxCell>
+
+        <!-- Phương thức (Methods) - public nên dùng dấu + -->
+        <mxCell id="cust-method1" value="+ placeOrder(): void" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="cust1">
+          <mxGeometry y="124" width="260" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== LỚP ORDER ===================== -->
+        <mxCell id="order1" value="Order" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffffff;fontSize=14;" vertex="1" parent="pool1">
+          <mxGeometry x="700" y="120" width="260" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="order-sep1" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="order1">
+          <mxGeometry y="30" width="260" height="8" as="geometry" />
+        </mxCell>
+
+        <mxCell id="order-attr1" value="- orderId: String" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="order1">
+          <mxGeometry y="38" width="260" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="order-attr2" value="- orderDate: Date" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="order1">
+          <mxGeometry y="64" width="260" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="order-sep2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="order1">
+          <mxGeometry y="90" width="260" height="8" as="geometry" />
+        </mxCell>
+
+        <mxCell id="order-method1" value="+ calculateTotal(): double" style="text;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=4;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="order1">
+          <mxGeometry y="98" width="260" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== QUAN HỆ ASSOCIATION ===================== -->
+        <!-- Customer "1" to "0..*" Order : một khách hàng có nhiều đơn hàng, mỗi đơn hàng thuộc về đúng 1 khách hàng -->
+        <mxCell id="assoc1" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;fontSize=13;strokeWidth=2;" edge="1" parent="pool1" source="cust1" target="order1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="assoc1-label-1" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=1;" vertex="1" connectable="0" parent="assoc1">
+          <mxGeometry x="-0.85" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="assoc1-label-2" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=1;" vertex="1" connectable="0" parent="assoc1">
+          <mxGeometry x="0.85" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
